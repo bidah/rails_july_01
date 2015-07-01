@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsJuly01</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="wrapper">
+	<div class="left">
+		<%= yield :sidebar %>
+	</div>
+	<div class="right">
+		<%= yield %>
+	</div>
+</div>
+
+</body>
+</html>
